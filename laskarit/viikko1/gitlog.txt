@@ -1,0 +1,66 @@
+commit 4134a32af30550d2f174be60f86f4b8d2eac3189
+Author: Ville Halonen <71012693+hzville@users.noreply.github.com>
+Date:   Mon Mar 22 18:29:20 2021 +0200
+
+    file removed and renamed
+
+ tiedostoja/file2             | 0
+ tiedostoja/{file1 => file22} | 0
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+
+commit ae7d2e5fdef5077b4527a148c788e72268e397ba
+Author: Ville Halonen <71012693+hzville@users.noreply.github.com>
+Date:   Mon Mar 22 18:25:37 2021 +0200
+
+    new dir and files
+
+ tiedostoja/file1 | 0
+ tiedostoja/file2 | 0
+ tiedostoja/file3 | 0
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+
+commit 1deca3a2ee1fc8d39a94debf1e4687b3427b221a
+Author: Ville Halonen <71012693+hzville@users.noreply.github.com>
+Date:   Mon Mar 22 18:11:40 2021 +0200
+
+    muutos eka.txt
+
+ eka.txt | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 6a6591104be7065c190f74931b46f320460b9f38
+Author: Ville Halonen <71012693+hzville@users.noreply.github.com>
+Date:   Mon Mar 22 18:10:37 2021 +0200
+
+    muutos
+
+ tiedosto.txt => eka.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 03336e71356c5a4b38c25c83561867cb043acf13
+Author: Ville Halonen <71012693+hzville@users.noreply.github.com>
+Date:   Mon Mar 22 18:09:44 2021 +0200
+
+    poisto ja nimen vaihto
+
+ toinen.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 317c4faf92be066e655a7459cd407f3e704da2f6
+Author: Ville Halonen <71012693+hzville@users.noreply.github.com>
+Date:   Mon Mar 22 18:01:16 2021 +0200
+
+    muutos ja lisäys
+
+ tiedosto.txt | 1 +
+ toinen.txt   | 0
+ 2 files changed, 1 insertion(+)
+
+commit 704cbdf25dfeafc740c0cf29d3a89d57abb588c0
+Author: Ville Halonen <71012693+hzville@users.noreply.github.com>
+Date:   Mon Mar 22 17:58:24 2021 +0200
+
+    tiedosto.txt loutu
+
+ tiedosto.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
