@@ -9,7 +9,7 @@ Dokumentaatio
 
 [Vaatimusmäärittely](https://github.com/hzville/ohte-harjoitustyo-2021/blob/master/dokumentaatio/vaatimusmaarittely.md)
 
-
+[Työaikakirjanpito](https://github.com/hzville/ohte-harjoitustyo-2021/blob/master/dokumentaatio/tuntikirjanpito.md)
 
 
 
