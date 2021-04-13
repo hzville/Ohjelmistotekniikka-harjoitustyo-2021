@@ -1,0 +1,9 @@
+.idea*
+*.swp
+/laskarit/viikko2/*
+laskarit/.idea/
+.coverage
+htmlcov/*
+src/__pycache__/*
+src/test/__pycache__/*
+src/test/__init__.py
