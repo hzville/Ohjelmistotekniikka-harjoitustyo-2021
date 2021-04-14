@@ -6,4 +6,3 @@ laskarit/.idea/
 htmlcov/*
 src/__pycache__/*
 src/test/__pycache__/*
-src/test/__init__.py

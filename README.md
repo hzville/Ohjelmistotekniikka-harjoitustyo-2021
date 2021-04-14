@@ -14,7 +14,7 @@ Dokumentaatio
 
 Asennus
 -------------------
-Sovellus on tehty Python-versiolla 3.8. Sovelluksen toimivuutta ei voida taata tätä vanhemmilla versioilla.
+Sovellus on toteutettu Python-versiolla 3.8. Sovelluksen toimivuutta ei voida taata tätä vanhemmilla versioilla.
 
 Sovelluksen ja testien suorittamiseen tarvitset Poetry-komentorivityökalun. 
 Voit asentaa Poetryn osoitteesta https://python-poetry.org/ .
