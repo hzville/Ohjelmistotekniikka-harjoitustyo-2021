@@ -11,6 +11,7 @@ Dokumentaatio
 
 [Työaikakirjanpito](https://github.com/hzville/ohte-harjoitustyo-2021/blob/master/dokumentaatio/tuntikirjanpito.md)
 
+[Arkkitehtuurikuvaus](https://github.com/hzville/ohte-harjoitustyo-2021/blob/master/dokumentaatio/arkkitehtuuri.md)
 
 Asennus
 -------------------
