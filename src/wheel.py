@@ -8,7 +8,16 @@ class Wheel:
         self.is_locked = False
 
     def spin(self):
-        self.value = random.randint(1, 5)
+        if not self.is_locked:
+            self.value = random.randint(1, 5)
+
+    def check_if_locked(self):
+        if self.value is None:
+            pass
+        if self.is_locked:
+            self.set_unlocked()
+        else:
+            self.set_locked()
 
     def set_locked(self):
         self.is_locked = True

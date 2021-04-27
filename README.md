@@ -1,4 +1,4 @@
-SlotGame
+Fruity Slots
 ============
 
 Klassinen hedelmäpeli, missä tavoitteena on saada 3 samanlaista kuviota voittolinjalle.

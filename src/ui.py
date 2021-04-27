@@ -1,78 +1,107 @@
-from tkinter import Tk, IntVar, W, E
-from tkinter.ttk import Button, Label
+from tkinter import IntVar
+from tkinter.ttk import Label, Button
 from wheel import Wheel
 
 
-class UI:
+class UI:  # pylint: disable=too-many-instance-attributes
+    # all instance-attributes are needed to run the show
 
     def __init__(self, root):
         self.root = root
-        self.coin = None
+        self.credits = None
+        self.bet = None
+        self.bet_list = [2, 5, 10, 1]
         self.first_wheel = Wheel()
-        self.first_wheel_display_value = None
         self.second_wheel = Wheel()
-        self.second_wheel_display_value = None
         self.third_wheel = Wheel()
-        self.third_wheel_display_value = None
+        self.first_wheel_display_value = IntVar()
+        self.second_wheel_display_value = IntVar()
+        self.third_wheel_display_value = IntVar()
 
     def start(self):
         self.initialize_variables()
         self.create_labels()
         self.create_buttons()
-        self.root.grid_columnconfigure(0, weight=1)
-
-    def create_labels(self):
-        main_label = Label(master=self.root, text="Fruity Slots")
-        add_coin_label = Label(master=self.root, text="Add coins:")
-        balance_label = Label(master=self.root, text="Balance:")
-        coin_label = Label(master=self.root, textvariable=self.coin)
-        first_wheel_label = Label(
-            master=self.root, textvariable=self.first_wheel_display_value)
-        second_wheel_label = Label(
-            master=self.root, textvariable=self.second_wheel_display_value)
-        third_wheel_label = Label(
-            master=self.root, textvariable=self.third_wheel_display_value)
-
-        main_label.grid(row=0, column=0, sticky=E)
-        balance_label.grid(row=1, column=0, sticky=W)
-        coin_label.grid(row=1, column=1, sticky=W)
-        add_coin_label.grid(row=1, column=2, sticky=E)
-        first_wheel_label.grid(row=2, column=0)
-        second_wheel_label.grid(row=2, column=1)
-        third_wheel_label.grid(row=2, column=2)
-
-    def create_buttons(self):
-        add_1_coin = Button(master=self.root, text="1€",
-                            command=self.add_1_coin)
-        add_5_coin = Button(master=self.root, text="5€",
-                            command=self.add_5_coin)
-        add_10_coin = Button(master=self.root, text="10€",
-                             command=self.add_10_coin)
-        play_button = Button(master=self.root, text="Play!",
-                             command=self.spin_all_wheels)
-        add_1_coin.grid(row=1, column=3, sticky=E)
-        add_5_coin.grid(row=1, column=4, sticky=E)
-        add_10_coin.grid(row=1, column=5, sticky=E)
-        play_button.grid(row=3, column=1, sticky=E)
 
     def initialize_variables(self):
-        self.coin = IntVar()
-        self.coin.set(0)
-        self.first_wheel_display_value = IntVar()
+        self.credits = IntVar()
+        self.credits.set(0)
+        self.bet = IntVar()
+        self.bet.set(1)
         self.first_wheel_display_value.set(0)
-        self.second_wheel_display_value = IntVar()
         self.second_wheel_display_value.set(0)
-        self.third_wheel_display_value = IntVar()
         self.third_wheel_display_value.set(0)
 
-    def add_1_coin(self):
-        self.coin.set(self.coin.get() + 1)
+    def create_labels(self):
+        main_label = Label(master=self.root, text="Fruity Slots", relief="ridge")
+        add_credits_label = Label(master=self.root, text="Add credits:", relief="ridge")
+        balance_label = Label(master=self.root, text="Balance:", relief="ridge")
+        credits_label = Label(master=self.root, textvariable=self.credits, relief="ridge")
+        bet_label = Label(master=self.root, text="Bet:", relief="ridge")
+        bet_amount_label = Label(master=self.root, textvariable=self.bet, relief="ridge")
 
-    def add_5_coin(self):
-        self.coin.set(self.coin.get() + 5)
+        first_wheel_label = Label(
+            master=self.root, textvariable=self.first_wheel_display_value,
+            anchor="center", relief="ridge")
+        second_wheel_label = Label(
+            master=self.root, textvariable=self.second_wheel_display_value,
+            anchor="center", relief="ridge")
+        third_wheel_label = Label(
+            master=self.root, textvariable=self.third_wheel_display_value,
+            anchor="center", relief="ridge")
 
-    def add_10_coin(self):
-        self.coin.set(self.coin.get() + 10)
+        main_label.grid(row=0, column=3, pady=15)
+        balance_label.grid(row=1, column=0)
+        credits_label.grid(row=1, column=1)
+        bet_label.grid(row=2, column=0)
+        bet_amount_label.grid(row=2, column=1)
+        add_credits_label.grid(row=1, column=2)
+        first_wheel_label.grid(row=3, column=0, ipadx=15, ipady=15, pady=15)
+        second_wheel_label.grid(row=3, column=1, ipadx=15, ipady=15, pady=15)
+        third_wheel_label.grid(row=3, column=2, ipadx=15, ipady=15, pady=15)
+
+    def create_buttons(self):
+        add_1_credits = Button(master=self.root, text="1€",
+                               command=self.add_1_credits)
+        add_5_credits = Button(master=self.root, text="5€",
+                               command=self.add_5_credits)
+        add_10_credits = Button(master=self.root, text="10€",
+                                command=self.add_10_credits)
+
+        play_button = Button(master=self.root, text="Play",
+                             command=self.play)
+        raise_bet_button = Button(master=self.root, text="Raise Bet",
+                                  command=self.raise_bet)
+
+        lock_wheel_1_button = Button(master=self.root, text="Lock",
+                                     command=self.first_wheel.check_if_locked)
+        lock_wheel_2_button = Button(master=self.root, text="Lock",
+                                     command=self.second_wheel.check_if_locked)
+        lock_wheel_3_button = Button(master=self.root, text="Lock",
+                                     command=self.third_wheel.check_if_locked)
+
+        add_1_credits.grid(row=1, column=3)
+        add_5_credits.grid(row=1, column=4)
+        add_10_credits.grid(row=1, column=5)
+
+        play_button.grid(row=5, column=1)
+        raise_bet_button.grid(row=5, column=2)
+
+        lock_wheel_1_button.grid(row=4, column=0)
+        lock_wheel_2_button.grid(row=4, column=1)
+        lock_wheel_3_button.grid(row=4, column=2)
+
+    def add_1_credits(self):
+        self.credits.set(self.credits.get() + 1)
+
+    def add_5_credits(self):
+        self.credits.set(self.credits.get() + 5)
+
+    def add_10_credits(self):
+        self.credits.set(self.credits.get() + 10)
+
+    def use_credits(self, bet: int):
+        self.credits.set(self.credits.get() - bet)
 
     def spin_all_wheels(self):
         self.first_wheel.spin()
@@ -82,11 +111,15 @@ class UI:
         self.second_wheel_display_value.set(self.second_wheel.value)
         self.third_wheel_display_value.set(self.third_wheel.value)
 
+    def raise_bet(self):
+        next_bet = self.bet_list.pop(0)
+        self.bet.set(next_bet)
+        self.bet_list.append(next_bet)
 
-if __name__ == "__main__":
-    window = Tk()
-    window.geometry("500x500")
-    window.title("SlotsGame")
-    ui = UI(window)
-    ui.start()
-    window.mainloop()
+    def play(self):
+        if self.credits.get() < self.bet.get():
+            return False
+
+        self.use_credits(self.bet.get())
+        self.spin_all_wheels()
+        return True

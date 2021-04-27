@@ -9,9 +9,13 @@ Sovelluksella voidaan pelata klassista hedelmäpeliä, missä tavoitteena on saa
 Suunnitellut toiminnallisuudet 
 -------------------------------
 
-- [x] Käyttäjä voi lisätä virtuaalisia kolikoita pelikoneeseen jotka siirtyvät käyttäjän pelivaroihin joilla hedelmäpeliä voi pelata
-- [ ] Käyttäjä valitsee pelipanoksen. Mitä suurempi panos sitä suurempi mahdollinen voitto
-- [ ]Käyttäjä voi lukita haluamansa kuvion jolloin voiton mahdollisuus kasvaa
+- [x] Käyttäjä voi lisätä virtuaalisia kolikoita pelikoneeseen jotka siirtyvät käyttäjän pelivaroihin
+- [x] Sovellus osaa aropa satunnaisia kuviota pelilinjoille  
+- [x] Käyttäjä voi valita pelipanoksen
+- [x] Pelivarat vähenevät pelipanoksen verran joka kierroksella
+- [x] Peliä ei voi pelata jos panos on isompi kuin käyttäjän pelivarat  
+- [x] Käyttäjä voi lukita haluamansa pelilinjan
+    - [x] Lukitun pelilinjan kuvio ei muutu pelatessa
     - [ ] Kuvioita voidaan lukita max 2 kpl
     - [ ] Kuvioita ei voi lukita jos kyseisellä kierroksella tuli voitto
     - [ ] Kuviot voidaan aina lukita vain yhden kierroksen ajaksi, jonka jälkeen vaaditaan uudelleenarvonta kaikista kuvioista.
