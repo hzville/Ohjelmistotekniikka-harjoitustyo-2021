@@ -13,9 +13,11 @@ Dokumentaatio
 
 [Arkkitehtuurikuvaus](https://github.com/hzville/ohte-harjoitustyo-2021/blob/master/dokumentaatio/arkkitehtuuri.md)
 
+[Viimeisin release](https://github.com/hzville/ohte-harjoitustyo-2021/releases)
+
 Asennus
 -------------------
-Sovellus on toteutettu Python-versiolla 3.8. Sovelluksen toimivuutta ei voida taata tätä vanhemmilla versioilla.
+Sovellus on toteutettu Python-versiolla `3.8.5` Sovelluksen toimivuutta ei voida taata tätä vanhemmilla versioilla.
 
 Sovelluksen ja testien suorittamiseen tarvitset Poetry-komentorivityökalun. 
 Voit asentaa Poetryn osoitteesta https://python-poetry.org/ .
@@ -41,5 +43,8 @@ avata haluamallasi verkkoselaimella tai komennolla:
 ```bash
 firefox htmlcov/index.html
 ```
-
+Koodin rakennetta voi arvioida Pylint työkalulla. Arviointi suoritetaan komennolla:
+```bash
+poetry run invoke lint
+```
 
