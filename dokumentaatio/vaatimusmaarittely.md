@@ -19,14 +19,11 @@ Suunnitellut toiminnallisuudet
     - [ ] Kuvioita voidaan lukita max 2 kpl
     - [ ] Kuvioita ei voi lukita jos kyseisellä kierroksella tuli voitto
     - [ ] Kuviot voidaan aina lukita vain yhden kierroksen ajaksi, jonka jälkeen vaaditaan uudelleenarvonta kaikista kuvioista.
-- [ ] Voittosumma voidaan yrittää tuplata
-    - [ ] Tuplaus on erillinen pelialue, jossa on kaksi erilaista kuviota
-    - [ ] Käyttäjä valitsee yhden kuvioista
-    - [ ] Pelikone arpoo voittokuvion näiden kahden kuvion välillä ja jos kuvio on sama kuin käyttäjän valitsema, tuplaa käyttäjä voittonsa. Muutoin käyttäjä häviää koko voittonsa
-    - [ ] Tuplaus on mahdollista päävoittoon asti
+- [x] Pelissä voi voittaa lisää pelivaroja
+    - [x] Voittojen suuruus määräytyy pelipanoksen mukaan
+    - [ ] Voittosumma voidaan yrittää tuplata
     - [ ] Tuplauksesta voi poistua jolloin voittosumma lisätään käyttäjän pelivaroihin. 
-
-
+  
 
 Jatkokehitysideat
 ------------------------------

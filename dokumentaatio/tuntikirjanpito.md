@@ -10,8 +10,11 @@ Tuntikirjanpito
 |20.4.2021| 12 | Suunnitellun logiikan toteuttamista sovellukseen|
 |26.4.2021| 9 | Tkinter harjoittelua |
 |27.4.2021| 13 | Ulkoasun ja logiikan suunnittelu sekä toteutus|
+|2.5.2021| 8 | Suunnittelua sekä rakenteen parantamista|
+|4.5.2021| 5 | Logiikan toteuttamista|
 
 
-|Yhteensä| 54|
+
+|Yhteensä| 67|
 
 

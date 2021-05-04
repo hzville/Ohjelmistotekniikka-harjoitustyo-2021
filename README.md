@@ -15,6 +15,9 @@ Dokumentaatio
 
 [Viimeisin release](https://github.com/hzville/ohte-harjoitustyo-2021/releases)
 
+[Käyttöohje](https://github.com/hzville/ohte-harjoitustyo-2021/blob/master/dokumentaatio/kayttoohje.md)
+
+
 Asennus
 -------------------
 Sovellus on toteutettu Python-versiolla `3.8.5` Sovelluksen toimivuutta ei voida taata tätä vanhemmilla versioilla.
