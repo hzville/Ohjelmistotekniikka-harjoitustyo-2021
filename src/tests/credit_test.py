@@ -1,6 +1,6 @@
 import unittest
 from tkinter import Tk
-from credit import Credit
+from entities.credit import Credit
 
 
 class TestCredit(unittest.TestCase):

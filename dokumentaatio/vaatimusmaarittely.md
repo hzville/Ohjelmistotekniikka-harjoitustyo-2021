@@ -16,13 +16,12 @@ Suunnitellut toiminnallisuudet
 - [x] Peliä ei voi pelata jos panos on isompi kuin käyttäjän pelivarat  
 - [x] Käyttäjä voi lukita haluamansa pelilinjan
     - [x] Lukitun pelilinjan kuvio ei muutu pelatessa
-    - [ ] Kuvioita voidaan lukita max 2 kpl
-    - [ ] Kuvioita ei voi lukita jos kyseisellä kierroksella tuli voitto
-    - [ ] Kuviot voidaan aina lukita vain yhden kierroksen ajaksi, jonka jälkeen vaaditaan uudelleenarvonta kaikista kuvioista.
+    - [x] Kuvioita voidaan lukita max 2 kpl
+    - [x] Kuvioita ei voi lukita jos kyseisellä kierroksella tuli voitto
+    - [x] Kuviot voidaan aina lukita vain yhden kierroksen ajaksi, jonka jälkeen vaaditaan uudelleenarvonta kaikista kuvioista.
 - [x] Pelissä voi voittaa lisää pelivaroja
     - [x] Voittojen suuruus määräytyy pelipanoksen mukaan
-    - [ ] Voittosumma voidaan yrittää tuplata
-    - [ ] Tuplauksesta voi poistua jolloin voittosumma lisätään käyttäjän pelivaroihin. 
+    - [x] Voitot lisätään pelivaroihin 
   
 
 Jatkokehitysideat

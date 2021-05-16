@@ -12,9 +12,8 @@ Tuntikirjanpito
 |27.4.2021| 13 | Ulkoasun ja logiikan suunnittelu sekä toteutus|
 |2.5.2021| 8 | Suunnittelua sekä rakenteen parantamista|
 |4.5.2021| 5 | Logiikan toteuttamista|
-
-
-
-|Yhteensä| 67|
+|14.5.2021| 10 | Logiikan toteuttamista|
+|16.5.2021| 7 | Viimeistely|
+|Yhteensä| 84| |
 
 

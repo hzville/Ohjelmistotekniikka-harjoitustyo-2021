@@ -1,5 +1,6 @@
 import unittest
-from payoff_logic import Payoff
+from entities.payoff_logic import Payoff
+
 
 class TestPayoff(unittest.TestCase):
     def setUp(self):

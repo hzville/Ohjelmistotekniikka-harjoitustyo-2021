@@ -1,5 +1,5 @@
 import unittest
-from wheel import Wheel
+from entities.wheel import Wheel
 
 
 class TestWheel(unittest.TestCase):
@@ -21,5 +21,3 @@ class TestWheel(unittest.TestCase):
     def test_set_unlocked(self):
         self.wheel.set_unlocked()
         self.assertEqual(self.wheel.is_locked, False)
-
-    #def test_check_if_locked(self):

@@ -23,8 +23,9 @@ class Wheel:
         """Arpoo pelilinjalle satunnaisen kuvion jos pelilinjaa ei ole lukittu"""
 
         if not self.is_locked:
-            self.value = random.randint(1, 5)
+            self.value = random.randint(1, 4)
             self.display_value.set(self.value)
+
 
     def check_if_locked(self):
         """Tarkistaa onko pelilinja lukittu ja muuttaa sen vastakkaiseksi arvoksi"""
